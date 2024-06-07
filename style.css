@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  overflow: auto;
+}
+
+.navbar {
+  color: white;
+  position: fixed;
+  padding: 0 20px;
+  z-index: 1000;
+  width: 100%;
+  background-color: rgb(223, 108, 15);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-right: 25px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar-icon ion-icon {
+  font-size: 30px;
+  margin-right: 25px;
+}
+
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.carousel {
+  position: relative;
+  max-width: 100%;
+  top: 60px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.carousel button {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-100%);
+  background-color: rgba(49, 49, 49, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 15px 25px;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.carousel button.prev {
+  left: 20px;
+}
+
+.carousel button.next {
+  right: 20px;
+}
+
+.carousel button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.marquee-text {
+  color: black;
+  position: relative;
+  bottom: 360px;
+  color: yellow;
+  background-color: rgb(226, 85, 19);
+  padding: 5px 10px;
+  font-size: 25px;
+}
+
+.my-services {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  gap: 80px;
+  margin-top: 60px;
+  border-top: 1px solid rgb(148, 139, 139);
+  padding-top: 100px;
+}
+
+.Services-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -300px;
+}
+
+.service-heading h1 {
+  font-size: 40px;
+  margin-bottom: -50px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 0 60px 0 60px;
+  box-shadow: 0 6px 25px 0 rgba(0, 0, 0, 0.39);
+}
+.service-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-card button {
+  padding: 8px 8px;
+  background-color: white;
+  border-radius: 15px;
+  font-size: 15px;
+  border: 1px solid rgb(255, 187, 0);
+  color: rgb(255, 187, 0);
+  cursor: pointer;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.service-card button:hover {
+  background-color: rgb(255, 161, 54);
+  color: white;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.582);
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  background-color: rgb(44, 42, 42);
+  color: white;
+  padding: 100px 80px;
+}
+
+.contact-container div {
+  width: 320px;
+  margin: 0 25px;
+}
+.contact-container li {
+  list-style: none;
+  margin: 8px 0;
+  font-size: 14px;
+  color: rgb(153, 153, 153);
+}
+
+.site-info p {
+  color: grey;
+  font-size: 15px;
+  width: 250px;
+}
+
+.footer-container {
+  font-size: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  word-spacing: 8px;
+  background-color: rgb(44, 42, 42);
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  border-top: 1px solid gray;
+}
+
+.booking-form {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.952);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.582);
+  border-radius: 15px;
+  height: 650px;
+  width: 550px;
+  top: 150px;
+  right: 450px;
+}
+
+.booking-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.input-box {
+  padding: 8px;
+  border-radius: 8px;
+  /* box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.582); */
+  /* border: none; */
+  margin: 8px 0;
+}
+
+.booking-form form button {
+  padding: 8px;
+  border-radius: 10px;
+  color: white;
+  margin: 15px 0;
+  margin-top: 25px;
+  background-color: #0082fc;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+}
+
+.cross {
+  color: white ;
+  background-color: rgb(211, 26, 26);
+  border-radius: 100px;
+  padding: 0 7px;
+  font-size: 15px;
+  border: none;
+  position: relative;
+  left: 200px;
+  cursor: pointer;
+  top: 20px;
+}

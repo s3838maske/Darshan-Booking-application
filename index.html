@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Darshan Booking Site</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div>
+      <nav class="navbar">
+        <h3>LOGO</h3>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+          <li><a href="">About US</a></li>
+          <li><a href="#Services">Services</a></li>
+        </ul>
+        <div class="navbar-icon">
+          <ion-icon name="notifications-circle-outline"></ion-icon>
+          <ion-icon name="log-out-outline"></ion-icon>
+        </div>
+      </nav>
+    </div>
+
+    <div class="main-slide-img">
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://bookdarshan.000webhostapp.com/img/bg-lalbaug.avif"
+              alt="Image 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="" alt="Image 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="" alt="Image 3" />
+          </div>
+        </div>
+        <button class="prev" onclick="">&#10094;</button>
+        <button class="next" onclick="">&#10095;</button>
+        <div class="marquee-text">
+          <marquee behavior="scroll" direction="left" scrollamount="15px"
+            >...!!जय गणेश!!... "वक्रतुंड महाकाय सूर्यकोटि समप्रभ निर्वीघ्नम
+            कुरमे देवा सर्वकार्येषु सर्वदा" सर्व गणेश भक्तांच्या हार्दिक स्वागत
+            ,ही वेबसाईट तुमच्या सगळ्यांसाठी एक वेगळा प्रकार नी ऑनलाइन दर्शन
+            बुकिंग ,पूजा बुकिंग, नोटिफिकेशन्स , डोनेशन आणि फीडबॅक साठी तयार केला
+            आहे. धन्यवाद!!!</marquee
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="Services-container" id="Services">
+      <div class="service-heading">
+        <h1>Our Services</h1>
+      </div>
+
+      <div class="my-services">
+        <div class="service-card">
+          <div>
+            <img
+              src="https://bookdarshan.000webhostapp.com/img/profile.png"
+              alt=""
+            />
+          </div>
+          <button>My Profile</button>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <img
+              src="https://bookdarshan.000webhostapp.com/img/darshan.jpg"
+              alt=""
+            />
+          </div>
+          <button onclick="formOpen()">Darshan Pass</button>
+        </div>
+
+        <div class="booking-form" id="test">
+          <div>
+            <button  class="cross"  onclick="closeFrom()">X</button>
+          </div>
+          <h1>Book Pass</h1>
+          <form action="">
+            <label for="">Select Date:</label>
+            <input class="input-box" type="date" id="date" required />
+            <label for="">Select the Time Slot:</label>
+            <select class="input-box" name="" id="time" required>
+              <option value="Murti Abhishek">07:00-09:00</option>
+              <option value="Murti Abhishek">09:00-11:00</option>
+              <option value="Murti Abhishek">11:00-12:00</option>
+              <option value="Murti Abhishek">16:00-17:00</option>
+              <option value="Murti Abhishek">17:00-17:30</option>
+              <option value="Murti Abhishek">18:00-19:00</option>
+              </select>
+            <label for="">Select the Type:</label>
+            <select class="input-box" name="" id="type" required>
+              <option value="Murti Abhishek">Murti Abhishek</option>
+              <option value="Murti Abhishek">Atharvashirsh path</option>
+              <option value="Murti Abhishek">Hoam Hawan</option>
+            </select>
+            <label for="">Select the Pass Type:</label>
+            <select class="input-box" name="" id="passType" required>
+              <option value="Murti Abhishek">Darshan</option>
+              <option value="Murti Abhishek">Pooja</option>
+            </select>
+            <label for="">No. fo Person:</label>
+            <select class="input-box" name="" id="noOfPerson" required>
+              <option value="Murti Abhishek">1</option>
+              <option value="Murti Abhishek">2</option>
+              <option value="Murti Abhishek">3</option>
+              <option value="Murti Abhishek">4</option>
+              <option value="Murti Abhishek">5</option>
+              <option value="Murti Abhishek">6</option>
+            </select>
+            <button type="submit" onclick="getData()">Book</button>
+          </form>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <img
+              src="https://png.pngtree.com/png-vector/20230831/ourmid/pngtree-illustration-gifts-puja-thali-kalash-png-image_9201458.png"
+              width="230px"
+              alt=""
+            />
+          </div>
+          <button onclick="formOpen()">Pooja Pass</button>
+        </div>
+        <div class="service-card">
+          <div>
+            <img
+              src="https://bookdarshan.000webhostapp.com/img/donation.png"
+              alt=""
+            />
+          </div>
+          <button onclick="donationformOpen()">Donation</button>
+        </div>
+        
+        <div  class="booking-form" style="top: 400px; height: 450px;" id="donation-form">
+          <div>
+            <button  class="cross"  onclick="donationFromClose()">X</button>
+          </div>
+          <h1>Donation</h1>
+          <form action="">
+            <input class="input-box" type="number" placeholder="Enter Amount" />
+            <input class="input-box" type="number" placeholder="Enter register mobile number" required />
+            <button type="submit" >PAY NOW</button>
+          </form>
+        </div>
+        
+        <div class="service-card">
+          <div>
+            <img
+              src="https://bookdarshan.000webhostapp.com/img/gallery.jpg"
+              alt=""
+            />
+          </div>
+          <button>Gallery</button>
+        </div>
+        <div class="service-card">
+          <div>
+            <img
+              src="https://bookdarshan.000webhostapp.com/img/booking.png"
+              alt=""
+            />
+          </div>
+          <button>My Booking</button>
+        </div>
+        <div class="service-card">
+          <div>
+            <img
+              src="https://bookdarshan.000webhostapp.com/img/feedback.png"
+              alt=""
+            />
+          </div>
+          <button>Feedback</button>
+        </div>
+        <div class="service-card">
+          <div>
+            <img
+              src="https://bookdarshan.000webhostapp.com/img/contact.png"
+              alt=""
+            />
+          </div>
+          <button>Contact Us</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-container" id="contact-us">
+      <div class="site-info">
+        <h3>DARSHAN BOOKING SITE</h3>
+        <p>
+          Book your darshan pass puja pass in this intresting website,it is
+          trustworthy website to use freely !!
+        </p>
+      </div>
+      <div class="contact-us">
+        <h3>CONTACT US</h3>
+        <li>
+          <ion-icon name="mail-outline"></ion-icon> Email-ID :
+          idarshanbook@gmail.com
+        </li>
+        <li>
+          <ion-icon name="call-outline"></ion-icon> Telephone no : 022-2909009
+        </li>
+      </div>
+      <div class="sevas">
+        <h3>PERSONAL SEVA'S</h3>
+        <li>E-donation</li>
+        <li>Book Online Pass</li>
+        <li>Darshan / Pooja</li>
+      </div>
+      <div class="about-us">
+        <h3>ABOUT US</h3>
+        <li>About Temple</li>
+        <li>About Pooja & Arti</li>
+        <li>Contact Us</li>
+        <li>Donation</li>
+      </div>
+    </div>
+    <footer class="footer-container">
+      <p>
+        Copyright &copy;2024 Designed By
+        <span style="color: rgb(192, 192, 192)">Shubham Maske</span>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </p>
+    </footer>
+  </body>
+</html>
