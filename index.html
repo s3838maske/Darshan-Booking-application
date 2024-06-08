@@ -19,7 +19,7 @@
   <body>
     <div>
       <nav class="navbar">
-        <h3>LOGO</h3>
+        <h3><img class="Logo-img" src="https://bookdarshan.000webhostapp.com/img/logo1.jpg" alt=""></h3>
         <ul>
           <li><a href="">Home</a></li>
           <li><a href="#contact-us">Contact Us</a></li>
@@ -94,40 +94,40 @@
             <button  class="cross"  onclick="closeFrom()">X</button>
           </div>
           <h1>Book Pass</h1>
-          <form action="">
+          <div class="form">
             <label for="">Select Date:</label>
             <input class="input-box" type="date" id="date" required />
             <label for="">Select the Time Slot:</label>
             <select class="input-box" name="" id="time" required>
-              <option value="Murti Abhishek">07:00-09:00</option>
-              <option value="Murti Abhishek">09:00-11:00</option>
-              <option value="Murti Abhishek">11:00-12:00</option>
-              <option value="Murti Abhishek">16:00-17:00</option>
-              <option value="Murti Abhishek">17:00-17:30</option>
-              <option value="Murti Abhishek">18:00-19:00</option>
+              <option >07:00-09:00</option>
+              <option >09:00-11:00</option>
+              <option >11:00-12:00</option>
+              <option >16:00-17:00</option>
+              <option >17:00-17:30</option>
+              <option >18:00-19:00</option>
               </select>
             <label for="">Select the Type:</label>
             <select class="input-box" name="" id="type" required>
-              <option value="Murti Abhishek">Murti Abhishek</option>
-              <option value="Murti Abhishek">Atharvashirsh path</option>
-              <option value="Murti Abhishek">Hoam Hawan</option>
+              <option>Murti Abhishek</option>
+              <option>Atharvashirsh path</option>
+              <option>Hoam Hawan</option>
             </select>
             <label for="">Select the Pass Type:</label>
             <select class="input-box" name="" id="passType" required>
-              <option value="Murti Abhishek">Darshan</option>
-              <option value="Murti Abhishek">Pooja</option>
+              <option id="passType" >Darshan</option>
+              <option id="passType" >Pooja</option>
             </select>
             <label for="">No. fo Person:</label>
             <select class="input-box" name="" id="noOfPerson" required>
-              <option value="Murti Abhishek">1</option>
-              <option value="Murti Abhishek">2</option>
-              <option value="Murti Abhishek">3</option>
-              <option value="Murti Abhishek">4</option>
-              <option value="Murti Abhishek">5</option>
-              <option value="Murti Abhishek">6</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
             </select>
             <button type="submit" onclick="getData()">Book</button>
-          </form>
+          </div>
         </div>
 
         <div class="service-card">
@@ -155,11 +155,11 @@
             <button  class="cross"  onclick="donationFromClose()">X</button>
           </div>
           <h1>Donation</h1>
-          <form action="">
+          <div class="form">
             <input class="input-box" type="number" placeholder="Enter Amount" />
             <input class="input-box" type="number" placeholder="Enter register mobile number" required />
             <button type="submit" >PAY NOW</button>
-          </form>
+          </div>
         </div>
         
         <div class="service-card">
@@ -178,8 +178,20 @@
               alt=""
             />
           </div>
-          <button>My Booking</button>
+          <button onclick="myBookingOpen()">My Booking</button>
         </div>
+
+        <div class="Booking-list" id="booking-list">
+          <div>
+            <button  class="cross" style="position: relative; left: 00px;" onclick="myBookingClose()">X</button>
+          </div>
+          <div>
+            <h1>My Booking</h1>
+          </div>
+          <div class="booking-card" id="booking-card">
+        </div>
+        </div>
+
         <div class="service-card">
           <div>
             <img
@@ -233,6 +245,8 @@
         <li>Donation</li>
       </div>
     </div>
+
+
     <footer class="footer-container">
       <p>
         Copyright &copy;2024 Designed By

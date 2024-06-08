@@ -8,13 +8,19 @@ body {
   font-family: "Poppins", sans-serif;
   overflow: auto;
 }
+.Logo-img{
+
+  width: 60px;
+  border-radius: 100%;
+}
 
 .navbar {
   color: white;
   position: fixed;
-  padding: 0 20px;
+  padding: 0 10px;
   z-index: 1000;
   width: 100%;
+  height: 68px;
   background-color: rgb(223, 108, 15);
 }
 
@@ -23,6 +29,10 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
   margin-right: 25px;
+}
+
+.navbar a:hover{
+  color: rgba(255, 255, 255, 0.438);
 }
 
 .navbar ul {
@@ -220,7 +230,7 @@ body {
   right: 450px;
 }
 
-.booking-form form {
+.booking-form .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -237,7 +247,7 @@ body {
   margin: 8px 0;
 }
 
-.booking-form form button {
+.booking-form .form button {
   padding: 8px;
   border-radius: 10px;
   color: white;
@@ -260,4 +270,32 @@ body {
   left: 200px;
   cursor: pointer;
   top: 20px;
+}
+
+.Booking-list{
+  background-color: #0082fc;
+  position: absolute;
+  padding: 50px;
+  display: none;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.Booking-list h1 {
+  border-bottom: 1px solid black;
+  padding: 20px;
+}
+
+.booking-details li{
+  list-style-type: none;
+}
+
+.booking-details{
+  text-align: left;
+  background-color: white;
+  font-weight: 600;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.336);
 }
